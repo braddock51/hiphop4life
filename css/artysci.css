@@ -1,0 +1,36 @@
+.content {
+    display: block;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.heading {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.heading h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.img-title-container {
+    margin-top: 1em;
+}
+
+.gallery-img {
+    border-radius: 50%;
+    box-shadow: 0 0 20px black; 
+}
+
+.gallery-text {
+    text-align: center;
+}
+
+
+
+

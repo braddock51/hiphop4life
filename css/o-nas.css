@@ -1,0 +1,30 @@
+.row-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-about p {
+    text-align: center;
+    margin-right: 1em;
+}
+
+.content {
+    flex-direction: column;
+
+}
+
+.content :nth-child(2){
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 767px) {
+    .row-about {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content :nth-child(2){
+        flex-direction: column;
+    }
+}

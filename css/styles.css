@@ -1,0 +1,191 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dark {
+    background: #050525;
+    color: white;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-mode {
+    background-color: black;
+    border: 0;
+    border-radius: 10%;
+    box-shadow: 0 0 20px red;
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+    color: red;
+    
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+
+
+.dark-mode:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode:focus {
+    outline: none;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    
+}
+
+.watch-date {
+    font-weight: bold;
+}
+
+nav {
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    
+}
+.nav-ul {
+    display: flex;
+    list-style: none;;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.nav-ul li {
+    padding: 1em 5em 1em 0;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: #316686;
+    font-size: 18px;
+}
+
+.nav-ul a:hover {
+    
+    color: #0c202c
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hamburger:focus {
+    outline: none; 
+}
+
+.content {
+    display: flex;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.content-article {
+    display: flex;
+    margin-right: 2em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-img {
+    width: 80px;
+    height:  100px;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-ul.show {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .content {
+        flex-flow: column-reverse wrap;
+
+    }
+    .text-img {
+        height: 300px;
+    }
+
+    .giphy-embed {
+        width: 300px;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 1em 1em;
+    }
+
+    .fa-bars {
+        transform: scale(2.5, 1.5);
+        
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .watch-date {
+        display: none;
+    }
+    
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
